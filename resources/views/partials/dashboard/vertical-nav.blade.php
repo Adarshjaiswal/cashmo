@@ -37,6 +37,15 @@
                 <span class="item-name">AEPS</span>
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link {{ activeRoute(route('BBPS.index')) }}" aria-current="page" href="{{ route('BBPS.index') }}">
+                <i class="icon">
+                    <!-- SVG icon code -->
+                </i>
+                <span class="item-name">BBPS</span>
+            </a>
+        </li>
         <li class="nav-item">
             <a class="nav-link " aria-current="page" href="#">
                 <i class="icon">

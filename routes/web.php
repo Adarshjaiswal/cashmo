@@ -3,6 +3,7 @@
 // Controllers
 
 use App\Http\Controllers\AEPSController;
+use App\Http\Controllers\BBPSController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Security\RolePermission;
 use App\Http\Controllers\Security\RoleController;
@@ -103,6 +104,9 @@ Route::get('/users/aeps/balance-info', [AEPSController::class, 'balanceinfo'])->
 Route::get('/users/aeps/mini-statement', [AEPSController::class, 'miniStatement'])->name('AEPS.miniStatement');
 Route::get('/users/aeps/withdrawal', [AEPSController::class, 'withdrawal'])->name('AEPS.withdrawal');
 Route::get('/users/aeps/atm-withdrawal', [AEPSController::class, 'ATMwithdrawal'])->name('AEPS.ATMwithdrawal');
+
+///// BBPS  ROUTES
+Route::get('/users/bbps', [BBPSController::class, 'index'])->name('BBPS.index');
 
 
 Route::get('/admin/all-queries-view', [QueryController::class, 'AllQueriesView'])->name('AllQuery.view');
