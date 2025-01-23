@@ -107,6 +107,15 @@ Route::get('/users/aeps/atm-withdrawal', [AEPSController::class, 'ATMwithdrawal'
 
 ///// BBPS  ROUTES
 Route::get('/users/bbps', [BBPSController::class, 'index'])->name('BBPS.index');
+Route::get('/users/bbps/electricity-bill', [BBPSController::class, 'electricity'])->name('BBPS.electricityBill');
+Route::get('/users/bbps/gas-bill', [BBPSController::class, 'gasBill'])->name('BBPS.gasBill');
+Route::get('/users/bbps/water-bill', [BBPSController::class, 'waterBill'])->name('BBPS.waterBill');
+Route::get('/users/bbps/broadband-bill', [BBPSController::class, 'broadbandBill'])->name('BBPS.broadbandBill');
+Route::get('/users/bbps/landline-bill', [BBPSController::class, 'landlineBill'])->name('BBPS.landlineBill');
+Route::get('/users/bbps/tax-muncipal', [BBPSController::class, 'taxMuncipal'])->name('BBPS.taxMuncipal');
+Route::get('/users/bbps/digital-voucher', [BBPSController::class, 'digitalVoucher'])->name('BBPS.digitalVoucher');
+Route::get('/users/bbps/insurance', [BBPSController::class, 'insurance'])->name('BBPS.insurance');
+Route::get('/users/bbps/loan-repayment', [BBPSController::class, 'loanRepayment'])->name('BBPS.loanRepayment');
 
 
 Route::get('/admin/all-queries-view', [QueryController::class, 'AllQueriesView'])->name('AllQuery.view');

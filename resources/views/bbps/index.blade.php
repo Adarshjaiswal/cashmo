@@ -13,56 +13,56 @@
                         <div class="row text-center">
                             <!-- Row 1 -->
                             <div class="col-2 mb-4">
-                            <a class="circle-logo" href="https://www.eazypan.in/admin/nps">
+                            <a class="circle-logo" href="{{route('BBPS.electricityBill')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/electricity_bill.png" alt=" logo">
                             </a>
                             
                            
                             </div>
                             <div class="col-2 mb-4">
-                            <a class="circle-logo" href="{{route('AEPS.balanceinfo')}}">
+                            <a class="circle-logo" href="{{route('BBPS.loanRepayment')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/loan_repay.png" alt=" logo">
                             </a>
                             
                            
                             </div>
                             <div class="col-2 mb-4">
-                            <a class="circle-logo" href="{{route('AEPS.miniStatement')}}">
+                            <a class="circle-logo" href="{{route('BBPS.insurance')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/insurance_i.png" alt=" logo">
                             </a>
                             
                           
                             </div>
                             <div class="col-2 mb-4">
-                            <a class="circle-logo" href="https://www.eazypan.in/admin/dashboard/comingsoon">
+                            <a class="circle-logo" href="{{route('BBPS.gasBill')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/gas_i.png" alt=" logo">
                             </a>
                            
                             </div>
                             <!-- Row 2 -->
                             <div class="col-2">
-                            <a class="circle-logo" href="https://www.eazypan.in/admin/instant_loan">
+                            <a class="circle-logo" href="{{route('BBPS.waterBill')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/water_i.png" alt=" logo">
                             </a>
                              
                             </div>
                             <div class="col-2">
-                            <a class="circle-logo" href="https://www.eazypan.in/admin/atm_withdrawal">
+                            <a class="circle-logo" href="{{route('BBPS.landlineBill')}}">
                                     <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/landline_i.png" alt="AEPS Service">
                                 </a>
                             </div>
                             <div class="col-2">
-                            <a class="circle-logo" href="https://www.eazypan.in/admin/loan_application">
+                            <a class="circle-logo" href="{{route('BBPS.broadbandBill')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/broadbnd.png" alt=" logo">
                             </a>
                             </div>
                             <div class="col-2">
-                            <a class="circle-logo" href="https://www.eazypan.in/admin/dashboard/comingsoon">
+                            <a class="circle-logo" href="{{route('BBPS.taxMuncipal')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/bill_payment_icons/municipal_tax.png" alt=" logo">
                             </a>
                             </div>
                             <div class="col-2">
-                            <a class="circle-logo" href="{{route('AEPS.withdrawal')}}">
+                            <a class="circle-logo" href="{{route('BBPS.digitalVoucher')}}">
                                 <img class="image-responsive" src="https://www.eazypan.in/assets/images/icon/recharge_icons/difital_voucher.png" alt=" logo">
                             </a>
                            
