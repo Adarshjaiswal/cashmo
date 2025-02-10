@@ -14,6 +14,8 @@ use App\Http\Controllers\MobileRechargeController;
 use App\Http\Controllers\WalletController;
 use App\Http\Controllers\QueryController;
 use App\Http\Controllers\PackageController;
+use App\Http\Controllers\PlanController;
+use App\Models\PlanCategory;
 // Packages
 use Illuminate\Support\Facades\Route;
 
@@ -94,6 +96,12 @@ Route::post('/admin/package/update', [PackageController::class, 'update'])->name
 Route::get('/admin/package/{id}/recharge-and-bills', [PackageController::class, 'showRechargeAndBills'])->name('packages.rechargeAndBills');
 Route::get('/admin/package/{package}/recharge-bills-data', [PackageController::class, 'getRechargeBillsData'])->name('admin.package.recharge-bills.data');
 Route::post('/admin/package/commission/update', [PackageController::class, 'updateCommission'])->name('admin.package.commission.update');
+
+
+// Plan Category
+Route::get('/admin/plan-category', [PlanController::class, 'CategoryView'])->name('AllPlanCategory');
+Route::get('/admin/plan-category-data', [PlanController::class, 'AllPlanCategories'])->name('AllPlanCategories.data');
+
 
 //add funds
 Route::post('/users/add-funds', [UserController::class, 'addFunds'])->name('users.addFunds');
